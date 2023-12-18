@@ -1,0 +1,45 @@
+# TODO: Partially duplicated from `.gitignore`. Remove once Prettier
+# supports `.gitignore`: https://github.com/prettier/prettier/issues/2294
+
+# Generated files
+app/**/*.js
+sticker-creator/**/*.js
+config/local-*.json
+config/local.json
+dist/**
+js/components.js
+js/util_worker.js
+libtextsecure/components.js
+libtextsecure/test/test.js
+stylesheets/*.css
+test/test.js
+ts/**/*.js
+!ts/**/.eslintrc.js
+ts/protobuf/*.d.ts
+ts/protobuf/*.js
+stylesheets/manifest.css
+ts/util/lint/exceptions.json
+sticker-creator/dist/**
+
+# Third-party files
+node_modules/**
+components/**
+js/curve/**
+js/Mp3LameEncoder.min.js
+js/WebAudioRecorderMp3.js
+
+# Assets
+/images/
+/fixtures/
+
+# Github workflows
+.github/**
+
+# Managed by package manager (`bower` and `yarn`/`npm`):
+/bower.json
+/package.json
+
+# Symlink into third-party `components`:
+stylesheets/_intlTelInput.scss
+
+preload.bundle.*
